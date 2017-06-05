@@ -25,10 +25,17 @@ export default StyleSheet.create({
         marginBottom: 8,
         padding: PADDING,
         backgroundColor:'rgba(255,255,255,0.8)',
+        flexDirection:'row',
+        alignSelf:'center',
     },
 
-    cancelContainer: {
-      alignSelf: 'center'
+    buttonsContainer: {
+        alignSelf: 'center',
+        flexDirection:'row',
+        borderRadius: BORDER_RADIUS,
+        width: width * 0.8,
+        backgroundColor: 'rgba(255,255,255,0.8)',
+        padding: PADDING
     },
 
     selectStyle: {
@@ -45,16 +52,23 @@ export default StyleSheet.create({
     },
 
     cancelStyle: {
-        borderRadius: BORDER_RADIUS,
-        width: width * 0.8,
-        backgroundColor: 'rgba(255,255,255,0.8)',
-        padding: PADDING
+        flex: 1,
     },
 
     cancelTextStyle: {
         textAlign: 'center',
         color: '#333',
         fontSize: FONT_SIZE
+    },
+
+    submitStyle: {
+        flex: 1,
+    },
+
+    submitTextStyle: {
+        textAlign: 'center',
+        color: '#333',
+        fontSize: FONT_SIZE,
     },
 
     optionStyle: {
